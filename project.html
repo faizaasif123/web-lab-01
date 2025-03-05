@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        nav {
+            background-color: black;
+            width: 100%;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .slider {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <br><br><br>
+    <h1>My Projects</h1>
+
+    <section>
+        <h2>1. SUDOKU</h2>
+        <p> C++ based Sudoku game, designed to offer an engaging user 
+            experience with distinct functionalities. The game provides multiple difficulty levels to challenge 
+            players of different skill levels. It features a user-friendly interface and integrates crucial options 
+            such as reset, exit, save, pause, and resume. </p>
+            <p>This project delves into GUI development and the creation of a puzzle generation algorithm to 
+                produce unique, solvable Sudoku puzzles. Overcoming challenges inherent in game design and 
+                programming, the result is a refined and functional Sudoku game. </p>
+        <div class="slider-container">
+            <div class="slider" id="slider1">
+                <button class="arrow prev" onclick="prevSlide('slider1')">❮</button>
+                <div class="slides">
+                    <img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 222508.png" alt="Sudoku Screenshot 1">
+                    <img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 220219.png">
+                    <img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 221618.png" alt="Sudoku Screenshot 3">
+                    <img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 221942.png" alt="Sudoku Screenshot 3">
+                    <img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 221954.png" alt="Sudoku Screenshot 3">
+                    <img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 222004.png" alt="Sudoku Screenshot 3">
+                    <img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 222013.png" alt="Sudoku Screenshot 3">
+                    <img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 222021.png" alt="Sudoku Screenshot 3">
+                    
+                </div>
+                <button class="arrow next" onclick="nextSlide('slider1')">❯</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <h2>2. PACMAN</h2>
+        <p>Pac-Man is a classic arcade game that involves navigating a character (Pac
+            Man) through a maze to eat pellets while avoiding ghosts. 
+            Key game elements include a maze layout, Pac-Man character, ghosts, pellets, 
+            power-ups, and scoring.</p>
+            
+        <div class="slider-container">
+            <div class="slider" id="slider3">
+                <button class="arrow prev" onclick="prevSlide('slider3')">❮</button>
+                <div class="slides">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 235117.png" alt="Sudoku Screenshot 1">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 235126.png">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 235201.png" alt="Sudoku Screenshot 3">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 235210.png" alt="Sudoku Screenshot 3">
+
+                </div>
+                <button class="arrow next" onclick="nextSlide('slider3')">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3.  ERROR DETETION AND RECOVERY</h2>
+        <p>Debugging is a critical aspect of software development, often requiring significant 
+            time and effort to identify and resolve issues in code. This project aims to 
+            streamline the debugging process by implementing a system that not only detects 
+            errors but also suggests possible recovery options. The system focuses on: <BR>
+            1. Syntax validation based on predefined grammar rules. 
+            2. Semantic checks to ensure logical consistency. 
+            3. Detailed error reporting to guide developers. 
+            4. Error recovery mechanisms to handle invalid input gracefully. <BR>
+            By providing these features, the system enhances developer productivity and 
+            reduces debugging time.</p>
+            
+        <div class="slider-container">
+            <div class="slider" id="slider4">
+                <button class="arrow prev" onclick="prevSlide('slider4')">❮</button>
+                <div class="slides">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 235508.png" alt="Sudoku Screenshot 1">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 235520.png">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 235528.png" alt="Sudoku Screenshot 3">
+
+
+                </div>
+                <button class="arrow next" onclick="nextSlide('slider4')">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. LEARNING MANAGEMENT SYSTEM</h2>
+        <p>AcademeXperience is set to become an essential component of the modern
+            educational landscape. Its comprehensive suite of features, coupled with a user-centric design, will
+            provide educational institutions with the tools they need to navigate the challenges of contemporary
+            education. Through this project, we aim to empower educators, engage students, and ultimately, enhance
+            the overall quality of education.</p>
+            <p>AcademeXperience
+                aims to address these gaps by offering a cost-effective, customizable, and user-friendly alternative. Our
+                project utilizes NetBeans for an intuitive user interface and MS SQL Server for efficient querying and
+                data management. This approach ensures a seamless, reliable, and scalable solution tailored to the specific
+                needs of contemporary educational institutions, providing a fresh and innovative perspective on modern
+                education.</p>
+        <div class="slider-container">
+            <div class="slider" id="slider2">
+                <button class="arrow prev" onclick="prevSlide('slider2')">❮</button>
+                <div class="slides">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 232004.png" alt="Sudoku Screenshot 1">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 232359.png">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 232439.png" alt="Sudoku Screenshot 3">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 232526.png" alt="Sudoku Screenshot 3">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 232532.png" alt="Sudoku Screenshot 3">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 232611.png" alt="Sudoku Screenshot 3">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 232642.png" alt="Sudoku Screenshot 3">
+<img src="C:\Users\PMLS\Pictures\Screenshots\Screenshot 2025-03-04 232652.png" alt="Sudoku Screenshot 3">
+                </div>
+                <button class="arrow next" onclick="nextSlide('slider2')">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function updateSlide(sliderId, index) {
+            const slider = document.getElementById(sliderId);
+            const slides = slider.querySelector('.slides');
+            const totalSlides = slider.querySelectorAll('.slides img').length;
+            slides.style.transform = `translateX(${-index * 100}%)`;
+            slider.dataset.index = index;
+        }
+
+        function nextSlide(sliderId) {
+            const slider = document.getElementById(sliderId);
+            let index = parseInt(slider.dataset.index || "0");
+            const totalSlides = slider.querySelectorAll('.slides img').length;
+            index = (index + 1) % totalSlides;
+            updateSlide(sliderId, index);
+        }
+
+        function prevSlide(sliderId) {
+            const slider = document.getElementById(sliderId);
+            let index = parseInt(slider.dataset.index || "0");
+            const totalSlides = slider.querySelectorAll('.slides img').length;
+            index = (index - 1 + totalSlides) % totalSlides;
+            updateSlide(sliderId, index);
+        }
+
+        document.querySelectorAll('.slider').forEach(slider => {
+            slider.dataset.index = "0";
+            setInterval(() => nextSlide(slider.id), 3000);
+        });
+    </script>
+</body>
+</html>
